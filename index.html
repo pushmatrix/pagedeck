@@ -42,10 +42,15 @@
       -o-transition: left 0s; /* Opera */
     }
 
-    #backdrop {
-      position: relative;
+    #backdrop, .tooltip {
+      position: absolute;
       top:50%;
       width: 100%;
+    }
+
+    .tooltip {
+      color: white;
+      z-index: 1000;
     }
   </style>
 
@@ -110,6 +115,8 @@
   </script>
 </head>
   <body>
+
+  <div class='tooltip'>&#8592; Swipe to the left</div>
   <div id='pages'></div>
 
   <div id='backdrop'>
