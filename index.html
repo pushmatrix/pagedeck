@@ -90,6 +90,7 @@
         });
 
         $('.page').on('touchstart mousedown', function(e){
+          $('.tooltip').fadeOut();
           offsetX = getXPos(e);
           currentPage = $(e.target);
           currentPage.addClass('dragging');
